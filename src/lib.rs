@@ -44,7 +44,7 @@ fn zscore_threshold(
 }
 
 #[pymodule]
-fn infercnasc(_py: Python, m: &PyModule) -> PyResult<()> {
+fn rs_infercnasc(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(smooth_matrix, m)?)?;
     m.add_function(wrap_pyfunction!(zscore_threshold, m)?)?;
     Ok(())

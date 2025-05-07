@@ -1,0 +1,14 @@
+[package]
+name = "rs-inferCNAsc"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+numpy = "0.20"
+ndarray = { version = "0.15", features = ["rayon"] }
+rayon = "1.7"
+bitvec = "1.0"
